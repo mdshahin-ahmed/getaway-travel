@@ -8,12 +8,12 @@ const MyOrders = () => {
     const email = user.email;
 
     useEffect( () => {
-        fetch(`http://localhost:5000/myOrders/${email}`)
+        fetch(`https://obscure-chamber-15764.herokuapp.com/myOrders/${email}`)
         .then(res => res.json())
         .then(data => setOrders(data))
     },[]);
     const handleDelete = id => {
-        const url = `http://localhost:5000/myOrders/${email}/${id}`;
+        const url = `https://obscure-chamber-15764.herokuapp.com/myOrders/${email}/${id}`;
         console.log(url);
         fetch(url, {
             method: 'DELETE'

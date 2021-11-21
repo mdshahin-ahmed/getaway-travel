@@ -7,7 +7,7 @@ const Tours = () => {
     const {user} = useAuth();
     // console.log(user);
     useEffect(() => {
-        fetch('http://localhost:5000/tours')
+        fetch('https://obscure-chamber-15764.herokuapp.com/tours')
             .then(res => res.json())
             .then(data => setTours(data))
     }, []);
@@ -16,7 +16,7 @@ const Tours = () => {
         bookTour.email = user.email;
         bookTour.status = 'Pending';
         // console.log(bookTour);
-        fetch('http://localhost:5000/bookTour',{
+        fetch('https://obscure-chamber-15764.herokuapp.com/bookTour',{
             method: 'POST',
             headers: {'content-type': 'application/json'},
             body: JSON.stringify(bookTour)

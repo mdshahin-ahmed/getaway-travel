@@ -7,7 +7,7 @@ const BookNow = () => {
     const [tour, setTour] = useState({});
 
     useEffect( () => {
-        fetch(`http://localhost:5000/tours/${tourId}`)
+        fetch(`https://obscure-chamber-15764.herokuapp.com/tours/${tourId}`)
         .then(res => res.json())
         .then(data => setTour(data))
     },[])

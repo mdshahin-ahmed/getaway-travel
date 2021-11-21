@@ -6,7 +6,7 @@ const AddTour = () => {
     const { register, handleSubmit,reset, formState: { errors } } = useForm();
     const onSubmit = data => {
         // console.log(data);
-        axios.post('http://localhost:5000/tours', data)
+        axios.post('https://obscure-chamber-15764.herokuapp.com/tours', data)
         .then(res => {
             if (res.data.insertedId) {
                 alert('Added Successfully!');

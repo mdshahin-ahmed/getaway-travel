@@ -3,7 +3,7 @@ import './FreeBooking.css';
 
 const FreeBooking = () => {
     return (
-        <div>
+        <div className='freeBooking'>
             <h1 className="text-info mt-4">Hassle Free Bookings</h1>
             <div className="container mt-4">
                 <div className="row">                    
