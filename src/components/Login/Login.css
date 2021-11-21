@@ -1,0 +1,9 @@
+.login-style{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-style button{
+    border: 1px solid gray;
+}
