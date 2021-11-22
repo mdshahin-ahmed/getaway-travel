@@ -15,6 +15,7 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import AuthProvider from './context/AuthProvider';
 import AddTour from './components/AddTour/AddTour';
 import MyOrders from './components/MyOrders/MyOrders';
+import ManageAllOrders from './components/ManageAllOrders/ManageAllOrders';
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path='/myOrders'>
               <MyOrders></MyOrders>
+            </PrivateRoute>
+            <PrivateRoute path='/allOrders'>
+              <ManageAllOrders></ManageAllOrders>
             </PrivateRoute>
             
             <Route path='*'>

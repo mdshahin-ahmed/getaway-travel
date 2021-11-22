@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Spinner } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
 import Tour from '../Tour/Tour';
 
@@ -22,6 +23,9 @@ const Tours = () => {
             body: JSON.stringify(bookTour)
         })
         .then(res => res.json())
+    }
+    if (tours.length < 1) {
+        return <Spinner animation="border" variant="info" />; 
     }
     return (
         <div>

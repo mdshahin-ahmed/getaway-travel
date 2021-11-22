@@ -3,7 +3,7 @@ import { Spinner } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
 import MyOrder from '../MyOrder/MyOrder';
 
-const MyOrders = () => {
+const ManageAllOrders = () => {
     const {user} = useAuth();
     const [orders, setOrders] = useState([]);
     const email = user.email;
@@ -26,7 +26,7 @@ const MyOrders = () => {
     }
     return (
         <div>
-            <h1 className='my-4 text-info'>My Booking</h1>
+            <h1 className='my-4 text-info'>All Booking</h1>
             <div className="container">
                 <div className="row">
                     {
@@ -42,4 +42,4 @@ const MyOrders = () => {
     );
 };
 
-export default MyOrders;
+export default ManageAllOrders;
