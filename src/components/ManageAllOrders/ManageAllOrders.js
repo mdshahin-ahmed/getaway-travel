@@ -9,18 +9,10 @@ const ManageAllOrders = () => {
     const email = user.email;
 
     useEffect( () => {
-        fetch(`https://obscure-chamber-15764.herokuapp.com/myOrders/${email}`)
+        fetch(`https://obscure-chamber-15764.herokuapp.com/myOrders`)
         .then(res => res.json())
         .then(data => setOrders(data))
     },[]);
-    const handleDelete = id => {
-        const url = `https://obscure-chamber-15764.herokuapp.com/myOrders/${email}/${id}`;
-        console.log(url);
-        fetch(url, {
-            method: 'DELETE'
-        })
-        .then()
-    }
     if (orders.length < 1) {
         return <Spinner animation="border" variant="info" />; 
     }
@@ -33,7 +25,6 @@ const ManageAllOrders = () => {
                         orders.map( order => <MyOrder
                             key={order._id}
                             order={order}
-                            handleDelete={handleDelete}
                         ></MyOrder>)
                     }
                 </div>
