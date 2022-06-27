@@ -1,13 +1,11 @@
 # Get Away
 
-This project code Link: https://github.com/Programming-Hero-Web-Course3/healthcare-related-website-mdshahin-ahmed
-
-This project Live site Link: https://medica-medical.web.app
+This project Live site Link: https://get-away-382c6.web.app/
 
 ## The benefit of these Projects
 
- - You can easily booking any tour
- - You can easily see many tour
- - You can see all details about our tours
- - You can see how many tours available in our website
- - You can send message from website
+- You can easily booking any tour location
+- You can easily see many tour location
+- You can see all details about our tour
+- You can see how many tour location available on our website
+- You can send message from website
